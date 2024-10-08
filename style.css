@@ -1,0 +1,762 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+html{scroll-behavior:smooth}
+
+.background{
+	overflow: hidden;
+	position: relative;
+  text-align: center;
+}
+
+.BGimg{
+	width: 100%;
+	min-height: 90vh;
+	object-fit: cover;
+}
+
+.mobile{
+	display: none;
+}
+
+.center{
+	position: absolute;
+  	top: 35%;
+  	left: 150px;
+  
+}
+
+h1{
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-size: 10vh;
+	text-align: left;
+}
+
+.mark{
+	font-family: pelago, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	color: #F39123;
+}
+
+p{font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+
+h3{
+	font-family: pelago, sans-serif;
+font-weight: 700;
+font-style: normal;
+	color: #f39123;
+	font-size: 50px;
+	text-align: left;
+}
+
+.blur{
+	filter: blur(7px);
+	transform: scale(1.05);
+	height: 100vh;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.orange{
+	color: #f39123;
+}
+/*---------------------------------Top--------------------------*/
+
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+	
+}
+
+.arrow{
+	width: 5vw;
+	position: absolute;
+  top: 75%;
+  left: 47.5%;
+
+	animation: bounce 1.7s ease-in-out;
+	animation-iteration-count: infinite;
+	
+}
+
+header{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 37px;
+ 	width: 91%;
+	margin: 0 3vw 0 4.5vw;
+	align-items: center;
+	
+}
+
+header img{
+	height: 12vh;
+}
+
+.language{
+
+	display: flex;
+}
+
+.language p{
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2vh;
+	padding-left: 20px;
+}
+
+.selected{
+	text-decoration: underline;
+	color: #f39123;
+}
+
+.unselected{
+	color: white;
+}
+
+.menu{
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0px;
+	right: 0px;
+	height: 95px;
+	width: 100%;
+	background-color: #161830;
+	color: white;
+	font-size: 30px;
+	align-items: center;
+}
+
+.menu p:hover{
+	color: #f39123;
+}
+
+.menupoints{
+	display: flex;
+	justify-content: space-between;
+	justify-content: flex-start;
+	padding: 0px 60px;
+}
+
+.menupoints p{
+	padding-left: 2.5vw;
+}
+
+.social{
+	display: flex;
+	justify-content: space-between;
+	justify-content: flex-start;
+	padding: 0px 60px;
+}
+
+.social img{
+	height: 30px;
+	padding: 0px 10px;
+}
+
+.artbutton{
+	background-color: #f39123;
+	padding: 20px;
+	border-radius: 1vw;
+	margin-left: 20vw;
+}
+
+.artbutton p{
+	color: #fff;
+	font-family: pelago, sans-serif;
+	font-weight: 700;
+}
+
+.artbutton:hover{
+	background-color: lightgray;
+}
+
+/*-------------------------------------About----------------------------------*/
+
+.aboutwrapper{
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: space-between;
+	width: 75%;
+}
+
+.abouttext{
+	text-align: left;
+	width: 35%;
+}
+
+.imgabout{
+	align-self: center;
+	width: 55%;
+}
+
+/*---------------------------------------Offers---------------------------------*/
+.image, .imageart{
+	padding: 5px 20px;
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+	height: 16.5vw;
+	transition: 0.5s;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-size: cover;
+}
+.image p, .imageart p{
+	color: white;
+	opacity: 0;
+	transform: scale(0);
+	font-size: 1.5vw;
+}
+
+.image h5, .imageart h5{
+	color: #161830;
+	font-family: pelago, sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.imageart h5{
+	color: white;
+}
+@media (hover: hover){
+.image:hover{
+	box-shadow: 0 0 0 30vw rgba(243, 145, 35, 0.7) inset;
+}
+	
+	@media (hover: hover){
+.imageart:hover{
+	box-shadow: 0 0 0 30vw rgba(22, 24, 48, 0.7) inset;
+}
+
+.image:hover p, .image:hover h5, .imageart:hover p, .imageart:hover h5{
+	opacity: 1;
+	transform: scale(1);
+}
+	}
+
+@media (hover: none){
+	
+	.image:hover, .imageart:hover{
+	box-shadow: 0 0 0 30vw rgba(22, 24, 48, 0.7) inset;
+}
+	}
+
+
+.offerscontainer{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	 transform: translate(-50%, -50%);
+	width: 70vw;
+}
+
+.picture1{
+	background-image:url("Assets/14-220604.jpg");
+}
+
+.picture2{
+	background-image:url("Assets/0056SKM Mirecourt (08-03-55).jpg");
+}
+
+.picture3{
+	background-image:url("Assets/portraits.jpg");
+}
+
+.picture4{
+	background-image:url("Assets/Picture3Sports.png");
+}
+
+.picture1art{
+	background-image:url("Assets/picture1art.jpg");
+}
+
+.picture2art{
+	background-image:url("Assets/picture2art.jpg");
+}
+
+.picture3art{
+	background-image:url("Assets/picture3art.jpg");
+}
+
+h5{
+	text-align: center;
+font-family: edita, serif;
+font-weight: 500;
+font-style: normal;
+	font-size: 2.5vw; 
+	margin: 3vh;
+	color: white;
+}
+
+.offerpictures{
+	display: flex;
+	justify-content: space-between;
+	}
+/*----------------------------------------Contact------------------------------------*/
+h2{
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-size: 8vh;
+	text-align: left;
+}
+
+.contactadjustement{
+	position: absolute;
+  	top: 10%;
+  	left: 105px;
+}
+.black{
+	font-family: edita, serif;
+font-weight: 700;
+font-style: normal;
+	color: #161830;
+}
+
+
+
+.form{
+	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+}
+
+input{
+	height: 2.5vw;
+	width: 45%;
+  	margin: 5px 10px 5px 0;
+  	padding: 10px;
+  	background-color: #fff;
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+	font-size: 120%;
+	border: none;
+}
+
+select{
+	padding: 10px;
+	height: 4.5vh;
+	width: 48%;
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+	font-size: 120%;
+	border: none;
+}
+
+.inline{
+  display: flex;
+}
+
+
+textarea{
+	height: 120px;
+	vertical-align: middle;
+  	margin: 5px 10px 5px 0;
+  	padding: 10px;
+  	background-color: #fff;
+  	border: none;
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+	font-size: 120%;
+	width: 50vw;
+}
+
+button{
+	width: 10vw;
+	height: 2.5vw;
+	border-radius: 2px;
+	background-color: #f39123;
+	border: none;
+	font-family: edita, serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-size: 1.5vw;
+}
+
+button:hover{
+	background-color: #161830;
+}
+
+input:placeholder{
+	color: grey;
+}
+
+input[type=submit]:hover{
+	background-color: #161830;
+	cursor: pointer;
+}
+
+/*-----------------------------------------Portfolio---------------------------*/
+.portfolo{
+	position: absolute;
+	height: 0;
+}
+
+.bilderport{
+	margin: 0 3vw;
+	box-sizing: border-box;
+	padding: 1vh 5vw;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: auto;
+	gap: 16px;
+	overflow-y: scroll;
+	max-height: 80vh;
+	height: 100%;
+}	
+
+.bilderport img{
+	width: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+	animation: fadeIn 0.7s;
+}
+
+.vertical{
+	grid-row: span 2;
+}
+
+
+@keyframes fadeIn {
+	0% {opacity: 0; transform: scale(0.5);}
+	100% {opacity: 1; transform: scale(1);}
+}
+
+li{
+	padding: 7px 0px;
+}
+
+h6{
+color: #F39123;
+text-align: center;
+font-family: edita, serif;
+font-weight: 500;
+font-style: normal;
+	font-size: 40px;
+	margin: 3vh 0 1vh;
+}
+
+.bilderport::-webkit-scrollbar {
+  display: none;
+}
+
+.bilderport	 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*-----------------------------------Footer-------------------------------------*/
+footer{
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	background-color: #161830;
+	padding-left: 60px;
+	color: white;
+	font-size: 20px;
+}
+
+/*--------------------------------------AGB-------------------------------------*/
+.agb{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: left;
+}
+
+/*-------------------------------------responsive------------------------------*/
+
+@media only screen and (max-width: 1000px){
+	
+	h1{
+		font-size: 9vh;
+	}
+	
+	h2{
+		font-size: 7vh;
+	}
+	
+	.menu{
+		font-size: 25px;
+	}	
+	
+	
+	.center{
+		top: 25%;
+		left: 100px;
+	}
+	
+	.offerscontainer{
+		width: 80vw;
+	}
+	
+	textarea{
+		width: 63vw;
+	}
+	
+	footer{
+		font-size: 15px;
+	}
+	
+	.abouttext{
+		padding-bottom: 170px;
+	}
+	
+}
+
+@media only screen and (max-width: 840px){
+	
+	.aboutwrapper{
+		flex-direction: column;
+	}
+	
+	.abouttext{
+		width: auto;
+		padding-bottom: 0;
+	}
+	
+	.imgabout{
+		width: 60vw;
+		padding-bottom: 30px;
+	}
+	
+	#about {
+background-color: white;
+	}
+	
+	#about .BGimg{
+		opacity: 80%;
+	}
+	
+	#about p{
+		font-size: 22px;
+	}
+}
+	
+	
+@media only screen and (max-width: 700px){
+	
+	.desk{
+		display: none;
+		
+	}
+	
+	.mobile{
+		display: block;
+		max-height: 90vh;
+	}
+	
+	.menupoints{
+		padding: 10px 20px 10px 10px;
+	}
+	
+	.menu{
+		font-size: 17px;
+	}	
+	
+.social{
+	
+	padding: 0px 20px;
+}
+
+.social img{
+	height: 20px;
+	padding: 0px 10px;
+}
+	
+	h2{
+		padding-right: 30px;
+	}
+	
+	.aboutwrapper{
+		flex-direction: column;
+	}
+	
+	.abouttext{
+		width: auto;
+	}
+	
+	.imgabout{
+		width: 80vw;
+		padding-bottom: 30px;
+	}
+	
+	#about {
+background-color: white;
+	}
+	
+	#about .BGimg{
+		opacity: 80%;
+	}
+	
+	#about p{
+		font-size: 20px;
+	}
+	
+	.bilderport{
+	grid-template-columns: repeat(2, 1fr);
+	}
+	
+	h2{
+		font-size: 6vh;
+	}
+	
+	button{
+		width: 25vw;
+		height: 7vw;
+		font-size: 2.5vh;
+	}
+	
+	.offerpictures{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.image{
+		width: 65vw;
+	height: 40vw;
+		margin: 20px;
+	}
+
+	#offers{
+		height: 250vw;
+	}
+	
+	#offers img{
+		height: 250vw;
+	}
+	
+	.image p{
+		font-size: 15px;
+	}
+	
+	.image h5{
+		font-size: 30px;
+	}
+	
+	.offerscontainer h5{
+		font-size:  30px;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 700px){
+	
+	.arrow{
+		top: 80%;
+	}
+	
+}
+	
+@media only screen and (max-width: 520px){
+	
+	h1{
+		font-size: 70px;
+	}
+	
+	.center{
+		left: 50px;
+	}
+	
+	.arrow{
+		width: 10vw;
+	left: 45%;
+	}
+	
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.language{
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	
+	#offers{
+		height: 300vw;
+	}
+	
+	#offers img{
+		height: 300vw;
+	}
+	
+	.form{
+	
+  	top: 70%
+	}
+	
+	.contactadjustement{
+		left: 10px;
+	}
+}
+
+
+
+
+/*------------------------------------------------Art-------------------------------------------*/
+.white{
+	background-color: white;
+}
+
+.menupointsart p {
+	color: #161830;
+}
+
+.flexcenter{
+	justify-content: center;
+}
+
+.bgorange{
+	background-color: #161830;
+	height: 100vh;
+}
