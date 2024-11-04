@@ -18,7 +18,8 @@ unset($subDirectories[1]);
 	
 		<?php
 foreach($subDirectories as $subDirectory){
-    echo '<h6>'.clean($subDirectory).'</h6>'; //create h6 element with folder name
+    //create h6 element with folder name
+    // echo '<h6>'.clean($subDirectory).'</h6>';
 	?>
 		
 	<div class="bilderport">

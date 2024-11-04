@@ -12,18 +12,16 @@
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="msapplication-config" content="/fav/browserconfig.xml">
 <meta name="theme-color" content="#161830">
+
+<meta charset="utf-8">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	
-	<meta charset="utf-8">
-	
-  <meta name="description" content="Sports- and Eventphotgrapher">
-  <meta name="keywords" content="Fotografie Sportfotografie Sportmarketing Schweiz Fotograf">
-	<link rel="stylesheet" href="https://use.typekit.net/vyc3wtt.css">
+<meta name="description" content="Sports- and Eventphotgrapher">
+<meta name="keywords" content="Fotografie Sportfotografie Sportmarketing Schweiz Fotograf">
+<link rel="stylesheet" href="https://use.typekit.net/vyc3wtt.css">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 	
-<body onclick>		
+<body>		
 	<div id="top" class="background">
    	  <img class="BGimg desk" src="Assets/BG-Top.jpg"/>
 	  <img class="BGimg mobile" src="Assets/BG_Top_Mobile.png"/>
