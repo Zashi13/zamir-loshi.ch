@@ -22,50 +22,43 @@
 </head>
 	
 <body>		
-	<div id="top" class="background">
-   	  <img class="BGimg desk" src="Assets/BG-Top.jpg"/>
-	  <img class="BGimg mobile" src="Assets/BG_Top_Mobile.png"/>
-<header>
-			  <img src="Assets/Logo-TextEN.png"/>
-	<a href="art.php"><div class="artbutton">
-		<p>Art Portrait Photography</p>
-	</div></a>
-    <div class="language"><a href="indexDE.php"><p class="unselected">DE</p></a><a href="index.php"><p class="selected">EN</p></a></div>
+	<section id="top">
+	<header>
+		<img src="Assets/Logo-TextEN.png" alt=""/>
+
+    <nav id="language"><a active href="indexDE.php">DE</a><a class="selected" href="index.php">EN</a></nav>
 	  </header>
 		  
 	  	 
 		  
-	  <h1 class="center">Make the moment of a <span class="mark">lifetime,</span><br>
-			  last <span class="mark">forever!</span> </h1>
-	  <a href="#menupoints"><img class="arrow" src="Assets/Arrows.svg" alt=""/></a>
-<div class="menu" id="menupoints">
+	  <h1 class="center">Make the moment of a <strong class="mark">lifetime,</strong><br>
+			  last <strong class="mark">forever!</strong> </h1>
+	  <a href="#navigation"><img id="arrow" src="Assets/Arrows.svg" alt=""/></a>
+
+<nav id="navigation">
 		<div class="social">
 		  <a href="https://www.instagram.com/zamirloshifoto/" target="_blank"><img src="Assets/instagram.svg" alt=""/></a> 
 		<a href="https://www.linkedin.com/in/zamir-loshi-263b2b189" target="_blank"><img src="Assets/linkedin-in.svg" alt=""/></a>
 		  </div>
 			
 			<div class="menupoints">
-				<a href="#about"><p>About me</p></a> <a href="#offers"><p>Offers</p></a> <a href="#contact"><p>Contact</p></a> <a href="#galerie"><p>Gallery </p></a>
+				<a href="#about">About me</a> <a href="#offers">Offers</a> <a href="#contact">Contact</a> <a href="#galerie">Gallery</a> <a href="art.php">Portrait Photography</a>
 			</div>
 		
-		</div>
-	</div>
+</nav>
+</section>
 
-	<div class="background" id="about">
-   	  <img class="BGimg blur" src="Assets/BG-About.jpg"/>
-		<div class="aboutwrapper">
+	<section id="about">
     <img class="imgabout" src="Assets/Portrait About.jpg"/> 
 	<div class="abouttext">
 		<h3>About me</h3>
 		<p>I have been a passionate sports photographer and photojournalist for several years and have photographed almost everything from local football clubs to international kart races to the World Economic Forum in Davos. My formal education includes an apprenticeship as a Mediamatiker EFZ and a one-year internship at the national newspaper "Blick". I would describe my photography style as high-contrast and colourful. I want to capture the emotions and performances of the athletes.
 Why photography? I photographed my first Formula 1 race at the 2019 Italian Grand Prix. The ability to immortalise emotions and tell whole stories in one image fascinated me deeply.</p>
-		</div>
-		</div>
-	</div>
+</div>
+</section>
 	
 	
-	<div class="background" id="offers">
-   	  <img class="BGimg blur" src="Assets/BG-Offers.jpg"/>
+	<section class="background" id="offers">
 	  <div class="offerscontainer">
 			<div class="offerpictures">
 				<div class="image picture1">
@@ -91,40 +84,16 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 			</div>
 		  <h5>Questions? Contact me!</h5>
 		</div>
-	</div>
+</section>
 	
 	
-	<!-- <div class="background" id="contact">
-   	  <img class="BGimg blur" src="Assets/BG-Contact.jpg"/>
-		<h2 class="contactadjustement">Tell me what <span class="black">you need</span> and <br>
-			I will send you <span class="black">an offer</span>.*</h2>
-		
-					<form method="post" action="sendmail.php">
-					<div class="form">	
-				<select id="contactreason" name="reason" required>
-					<option value="">Reson for contact</option>
-						<option value="EventPhoto">Event Photography</option>
-					<option value="Kart">Kart-Racing</option>
-						<option value="Portraits">Portraits</option>
-						<option value="Talk">Just want to talk</option>
-						
-						</select>
-						<div class="inline">					
-						<input type="email" required name="email" placeholder="Email">
-						<input type="text" required name="name" placeholder="Full Name"></div>
-				<br>
-
-						<textarea name="text" placeholder="Write your message"></textarea><br>
-						<button name="submit" class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-						</div>
-			</form>
-		
-	</div> -->
+<section class="background" id="contact">
+		<h2 class="contactadjustement">Tell me what <strong class="mark navy">you need</strong> and <br>
+			I will send you <strong class="mark navy">an offer</strong></h2>
+		<a href="mailto:info@zamir-loshi.ch">info@zamir-loshi.ch</a>
+</section>
 	
-	<div class="background BGimg" id="galerie">	
+	<section id="galerie">	
 
 	<div class="portfolio">
 	<?php 
@@ -133,7 +102,7 @@ $mainDir = 'portfolio';
 	require(__DIR__ . "/gallery.php"); ?>
 	
 	</div>
-	</div>
+</section>
 	<footer>
 	
 	<a href="agb.html"><p>AGB</p></a>
