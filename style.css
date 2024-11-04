@@ -249,6 +249,7 @@ header img{
 .image:hover{
 	box-shadow: 0 0 0 30vw rgba(243, 145, 35, 0.7) inset;
 }
+}
 	
 	@media (hover: hover){
 .imageart:hover{
@@ -432,10 +433,6 @@ input[type=submit]:hover{
 	box-sizing: border-box;
 	padding: 1vh 5vw;
 	width: min(90vw, 100%);
-	/* display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-auto-rows: auto;
-	gap: 16px; */
 	columns: 4 300px;
 	column-gap: 5px;
 }	

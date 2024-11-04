@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
 <head>
-	<meta name="viewport" content="initial-scale=0.9, maximum-scale=0.9, user-scalable=no"/>
-	<title>Zamir Loshi Fotografie</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
+<meta name="viewport" content="initial-scale=0.9, maximum-scale=0.9, user-scalable=no"/>
+<title>Zamir Loshi Fotografie</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png">
 <link rel="manifest" href="/fav/site.webmanifest">
@@ -12,9 +13,6 @@
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="msapplication-config" content="/fav/browserconfig.xml">
 <meta name="theme-color" content="#161830">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-	
 	<meta charset="utf-8">
 	
   <meta name="description" content="Sport- und Eventfotografie">
@@ -125,76 +123,16 @@ Wieso die Fotografie? Am Grossen Preis von Italien 2019 fotografierte ich mein e
 		
 	</div> -->
 	
-	<div class="background BGimg" id="galerie">
+	<div class="background BGimg" id="galerie">	
 
 	<div class="portfolio">
-	<?php
-	function clean($string) {
-		$string = str_replace('_', ' ', $string); // Replaces underline with space -> IMPORTANT: Foldername cant contain spaces, use underline instead
-
-   return preg_replace('/[^A-Za-z\-]/', ' ', $string); // Removes special chars and numbers -> Allows for custom file order
-}
-	//set main directory
+	<?php 
+		//set main directory
 $mainDir = 'portfolio';
-
-//gets sub directories
-$subDirectories = scandir($mainDir);
-
-//removes the first two indexes in the directories array that are just dots
-unset($subDirectories[0]);
-unset($subDirectories[1]);
-
-// loop through all sub directories to create h6 elements ...
-	?>
-
-	
-		<?php
-foreach($subDirectories as $subDirectory){
-    echo '<h6>'.clean($subDirectory).'</h6>'; //create h6 element with folder name
-	?>
-		
-	<div class="bilderport">
-		
-				<?php
-    // ... and then loop through all pictures in each sub directory
-    foreach(glob($mainDir.'/'.$subDirectory.'/*') as $curimg) { //safe img src in varaible
-	echo "<img src=".$curimg." class='img'>\n"; //echo a HTML img element
-    }
-	?>
-		
-		<?php
-	
-	echo "</div>"; //close the bilderport div after each section
-} 
-	?>
-	
-	
-		</div>
-		
-		<script>
-$('img').each(function(){ //run this function on every img element
-    var t = $(this); //create varaible with current element
-	var w = this.naturalWidth; //get original width from image
-	var h = this.naturalHeight; //get original height from image
-
-
-	if(w > h){ //check if width is bigger than height -> add correct class to element.
-        t.addClass('horizontal');
-    } else { t.addClass('vertical');
-		  
-		   }
-});
-		</script>
-		
-		<script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
+	require(__DIR__ . "/gallery.php"); ?>
 	
 	</div>
 	</div>
-	
 	<footer>
 	
 	<p>AGB</p>
