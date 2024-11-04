@@ -95,7 +95,7 @@ Wieso die Fotografie? Am Grossen Preis von Italien 2019 fotografierte ich mein e
 	</div>
 	
 	
-	<div class="background" id="contact">
+	<!-- <div class="background" id="contact">
    	  <img class="BGimg blur" src="Assets/BG-Contact.jpg"/>
 		<h2 class="contactadjustement">Sag mir was <span class="black">du brauchst</span> und <br>
 			ich sende dir <span class="black">eine Offerte</span>.*</h2>
@@ -123,7 +123,7 @@ Wieso die Fotografie? Am Grossen Preis von Italien 2019 fotografierte ich mein e
 						</div>
 			</form>
 		
-	</div>
+	</div> -->
 	
 	<div class="background BGimg" id="galerie">
 

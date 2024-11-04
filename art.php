@@ -91,7 +91,7 @@
 	</div>
 	
 	
-	<div class="background" id="contact">
+	<!-- <div class="background" id="contact">
    	  <div class="bgorange" src="Assets/BG-Contact.jpg">
 		<h2 class="contactadjustement">Tell me what <span class="orange">you need</span> and <br>
 			I will send you <span class="orange">an offer</span>.*</h2>
@@ -119,7 +119,7 @@
 						</div>
 			</form>
 	</div>
-	</div>
+	</div> -->
 	
 	<div class="background BGimg" id="galerie">
 

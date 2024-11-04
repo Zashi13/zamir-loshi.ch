@@ -96,7 +96,7 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 	</div>
 	
 	
-	<div class="background" id="contact">
+	<!-- <div class="background" id="contact">
    	  <img class="BGimg blur" src="Assets/BG-Contact.jpg"/>
 		<h2 class="contactadjustement">Tell me what <span class="black">you need</span> and <br>
 			I will send you <span class="black">an offer</span>.*</h2>
@@ -124,7 +124,7 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 						</div>
 			</form>
 		
-	</div>
+	</div> -->
 	
 	<div class="background BGimg" id="galerie">
 
