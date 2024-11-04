@@ -1,13 +1,22 @@
 @charset "utf-8";
 /* CSS Document */
 
+:root{
+	--orange: rgb(243, 145, 35);
+	--navy: rgb(22, 24, 48);
+	--white: rgb(243, 243, 243);
+	--black: rgb(18, 18, 18);
+}
+
 *{
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
 }
 
-html{scroll-behavior:smooth}
+html{
+	scroll-behavior:smooth
+}
 
 .background{
 	overflow: hidden;
@@ -36,7 +45,7 @@ h1{
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: white;
+	color: var(--white);
 	font-size: 10vh;
 	text-align: left;
 }
@@ -45,7 +54,7 @@ h1{
 	font-family: pelago, sans-serif;
 	font-weight: 700;
 	font-style: italic;
-	color: #F39123;
+	color: var(--orange);
 }
 
 p{font-family: edita, serif;
@@ -57,7 +66,7 @@ h3{
 	font-family: pelago, sans-serif;
 font-weight: 700;
 font-style: normal;
-	color: #f39123;
+	color: var(--orange);
 	font-size: 50px;
 	text-align: left;
 }
@@ -74,7 +83,7 @@ a{
 }
 
 .orange{
-	color: #f39123;
+	color: var(--orange);
 }
 /*---------------------------------Top--------------------------*/
 
@@ -126,11 +135,11 @@ header img{
 
 .selected{
 	text-decoration: underline;
-	color: #f39123;
+	color: var(--orange);
 }
 
 .unselected{
-	color: white;
+	color: var(--white);
 }
 
 .menu{
@@ -141,14 +150,14 @@ header img{
 	right: 0px;
 	height: 95px;
 	width: 100%;
-	background-color: #161830;
-	color: white;
+	background-color: var(--navy);
+	color: var(--white);
 	font-size: 30px;
 	align-items: center;
 }
 
 .menu p:hover{
-	color: #f39123;
+	color: var(--orange);
 }
 
 .menupoints{
@@ -175,14 +184,14 @@ header img{
 }
 
 .artbutton{
-	background-color: #f39123;
+	background-color: var(--orange);
 	padding: 20px;
 	border-radius: 1vw;
 	margin-left: 20vw;
 }
 
 .artbutton p{
-	color: #fff;
+	color: var(--white);
 	font-family: pelago, sans-serif;
 	font-weight: 700;
 }
@@ -227,14 +236,14 @@ header img{
 	background-size: cover;
 }
 .image p, .imageart p{
-	color: white;
+	color: var(--white);
 	opacity: 0;
 	transform: scale(0);
 	font-size: 1.5vw;
 }
 
 .image h5, .imageart h5{
-	color: #161830;
+	color: var(--navy);
 	font-family: pelago, sans-serif;
 	font-weight: 700;
 	font-style: italic;
@@ -243,7 +252,7 @@ header img{
 }
 
 .imageart h5{
-	color: white;
+	color: var(--white);
 }
 @media (hover: hover){
 .image:hover{
@@ -313,7 +322,7 @@ font-weight: 500;
 font-style: normal;
 	font-size: 2.5vw; 
 	margin: 3vh;
-	color: white;
+	color: var(--white);
 }
 
 .offerpictures{
@@ -325,7 +334,7 @@ h2{
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: white;
+	color: var(--white);
 	font-size: 8vh;
 	text-align: left;
 }
@@ -339,7 +348,7 @@ h2{
 	font-family: edita, serif;
 font-weight: 700;
 font-style: normal;
-	color: #161830;
+	color: var(--navy)
 }
 
 
@@ -358,11 +367,11 @@ input{
 	width: 45%;
   	margin: 5px 10px 5px 0;
   	padding: 10px;
-  	background-color: #fff;
+  	background-color: var(--white);
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: black;
+	color: var(--black)
 	font-size: 120%;
 	border: none;
 }
@@ -374,7 +383,7 @@ select{
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: black;
+	color: var(--black);
 	font-size: 120%;
 	border: none;
 }
@@ -389,12 +398,12 @@ textarea{
 	vertical-align: middle;
   	margin: 5px 10px 5px 0;
   	padding: 10px;
-  	background-color: #fff;
+  	background-color: var(--white);
   	border: none;
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: black;
+	color: var(--black);
 	font-size: 120%;
 	width: 50vw;
 }
@@ -403,17 +412,17 @@ button{
 	width: 10vw;
 	height: 2.5vw;
 	border-radius: 2px;
-	background-color: #f39123;
+	background-color: var(--orange);
 	border: none;
 	font-family: edita, serif;
 	font-weight: 400;
 	font-style: normal;
-	color: white;
+	color: var(--white);
 	font-size: 1.5vw;
 }
 
 button:hover{
-	background-color: #161830;
+	background-color: var(--navy);
 }
 
 input:placeholder{
@@ -421,7 +430,7 @@ input:placeholder{
 }
 
 input[type=submit]:hover{
-	background-color: #161830;
+	background-color: var(--navy);
 	cursor: pointer;
 }
 
@@ -434,14 +443,17 @@ input[type=submit]:hover{
 	padding: 1vh 5vw;
 	width: min(90vw, 100%);
 	columns: 4 300px;
-	column-gap: 5px;
+	column-gap: 10px;
 }	
 
-.bilderport img{
+.galleryimg{
 	display: block;
 	margin-inline: auto;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	width: 100%;
+	box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.6);
+-webkit-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.6);
+-moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.6);
 }
 
 .vertical{
@@ -453,7 +465,7 @@ li{
 }
 
 h6{
-color: #F39123;
+color: var(--orange);
 text-align: center;
 font-family: edita, serif;
 font-weight: 500;
@@ -478,9 +490,9 @@ footer{
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-	background-color: #161830;
+	background-color: var(--navy);
 	padding-left: 60px;
-	color: white;
+	color: var(--white);
 	font-size: 20px;
 }
 
@@ -490,7 +502,7 @@ footer{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: white;
+	color: var(--white);
 	text-align: left;
 }
 
@@ -551,7 +563,7 @@ footer{
 	}
 	
 	#about {
-background-color: white;
+background-color: var(--white);
 	}
 	
 	#about .BGimg{
@@ -612,7 +624,7 @@ background-color: white;
 	}
 	
 	#about {
-background-color: white;
+background-color: var(--white);
 	}
 	
 	#about .BGimg{
@@ -732,11 +744,11 @@ background-color: white;
 
 /*------------------------------------------------Art-------------------------------------------*/
 .white{
-	background-color: white;
+	background-color: var(--white);
 }
 
 .menupointsart p {
-	color: #161830;
+	color: var(--navy);
 }
 
 .flexcenter{
@@ -744,6 +756,6 @@ background-color: white;
 }
 
 .bgorange{
-	background-color: #161830;
+	background-color: var(--navy);
 	height: 100vh;
 }

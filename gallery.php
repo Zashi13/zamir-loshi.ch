@@ -26,7 +26,7 @@ foreach($subDirectories as $subDirectory){
 				<?php
     // ... and then loop through all pictures in each sub directory
     foreach(glob($mainDir.'/'.$subDirectory.'/*') as $curimg) { //safe img src in varaible
-	echo "<img src=".$curimg." class='img'>\n"; //echo a HTML img element
+	echo "<img src=".$curimg." class='galleryimg'>\n"; //echo a HTML img element
     }
 	?>
 		
