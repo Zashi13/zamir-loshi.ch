@@ -84,10 +84,18 @@ a:hover{
 	background-image: url(Assets/BG-Top.jpg);
 }
 
+#topart{
+	background-image: url(Assets/BG-Top-Art.jpg);
+}
+
 @media only screen and (max-width: 700px){
 	#top{
 	background-image: url(Assets/BG-Top-Mobile.jpg);	
-}}
+}
+	#topart{
+		background-image: url(Assets/BG-Top-Art-mobile.jpg);
+	}
+}
 
 #main-title{
 	position: absolute;
@@ -216,19 +224,39 @@ header img{
 	transform: scale(1.22); 
 	z-index: -1;
 }
+
 /*---------------------------------------Offers---------------------------------*/
 #offers{
-	background-image: url(Assets/BG-Offers.jpg);
 	padding: 50px 0px;
 	display: flex;
 	align-items: center;
+	z-index: -11;
+}
+
+.offers{
+	background-image: url(Assets/BG-Offers.jpg);
+}
+
+.offersart::before{
+	content: "";
+	background-image: url(Assets/BG-Offers-Art.jpg);
+	transform: scale(1.02);
+	background-size: inherit;
+	background-position: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	filter: blur(5px);
 }
 
 h5{
 	text-align: center;
-font-family: edita, serif;
-font-weight: 500;
-font-style: normal;
+	font-family: edita, serif;
+	font-weight: 500;
+	font-style: normal;
 	font-size: 3vw;
 	color: var(--white);
 }
@@ -250,7 +278,7 @@ font-style: normal;
 	justify-content: space-between;
 	}
 
-.image{
+.card{
 	min-height: 25vh;
 	padding: 30px 40px;
 	display: flex;
@@ -262,7 +290,7 @@ font-style: normal;
 	background-position: center;
 	background-size: cover;
 }
-.image p{
+.card p{
 	color: var(--white);
 	opacity: 0;
 	transform: scale(0);
@@ -270,7 +298,7 @@ font-style: normal;
 }
 
 
-.image h5{
+.card h5{
 	color: var(--navy);
 	font-family: pelago, sans-serif;
 	font-weight: 700;
@@ -280,20 +308,20 @@ font-style: normal;
 	margin: 0px;
 }
 
-.imageart h5{
+.art-card h5{
 	color: var(--white);
 }
 
 @media (hover: hover){
-.image:hover{
+.card:hover{
 	box-shadow: 0 0 0 30vw rgba(243, 145, 35, 0.7) inset;
 }
 
-.imageart:hover{
+.art-card:hover{
 	box-shadow: 0 0 0 30vw rgba(22, 24, 48, 0.7) inset;
 }
 
-.image:hover p, .image:hover h5, .imageart:hover p, .imageart:hover h5{
+.card:hover p, .card:hover h5, .cardart:hover p, .cardart:hover h5{
 	opacity: 1;
 	transform: scale(1);
 }
@@ -328,12 +356,21 @@ font-style: normal;
 }
 
 /*----------------------------------------Contact------------------------------------*/
-#contact{
+.contact{
 	background-image: url(Assets/BG-Contact.jpg);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	padding: 100px;
+}
+
+.contactart{
+	background-image: url(Assets/BG-Contact-Art.jpg);
+}
+
+#contactart{
+	background-image: url(Assets/BG-Contact.jpg);
+	background-color: var(--orange);
 }
 
 #contact a{
@@ -562,7 +599,7 @@ background-color: var(--white);
 		align-items: center;
 	}
 	
-	.image{
+	.card{
 		width: 65vw;
 	height: 40vw;
 		margin: 20px;
@@ -576,11 +613,11 @@ background-color: var(--white);
 		height: 250vw;
 	}
 	
-	.image p{
+	.card p{
 		font-size: 15px;
 	}
 	
-	.image h5{
+	.card h5{
 		font-size: 30px;
 	}
 	

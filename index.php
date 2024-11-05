@@ -58,26 +58,26 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 </section>
 	
 	
-	<section id="offers">
+	<section class="offers" id="offers">
 	  <div class="flexcontainer">
 			<div class="offerpictures">
-				<div class="image picture1">
+				<div class="card picture1">
 					<h5>Eventphotography</h5><br>
 					<p>In need of coverage for your next sporting or non-sporting event? I want to help you get the memories you deserve!</p>
 					</div>
 				
-				<div class="image picture2">
+				<div class="card picture2">
 					<h5>Kartracing</h5><br>
 					<p>Images for sponsors or just to remember your victories. I offer special rates for races of the Swiss Karting Championship and the Rotax Max Switzerland Series.</p>
 					</div>
 		  </div>
 			<h5>Marketing? Event-Photography? Design? <span class="mark">I got you covered!</span></h5>
 			<div class="offerpictures">
-				<div class="image picture3">
+				<div class="card picture3">
 					<h5>Portraits</h5><br>
 					<p>First impressions last. In just a few hours I make professional and creative portraits that leave a better impression than a selfie.</p>
 					</div>
-				<div class="image picture4">
+				<div class="card picture4">
 					<h5>Design</h5><br>
 					<p>I can also process the event photos or portraits into flyers, brochures, collages and much more. Everything under one roof.</p>
 					</div>
@@ -87,7 +87,7 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 </section>
 	
 	
-<section class="background" id="contact">
+<section class="contact" id="contact">
 		<h2 class="contactadjustement">Tell me what <strong class="mark navy">you need</strong> and <br>
 			I will send you <strong class="mark navy">an offer</strong></h2>
 		<a href="mailto:info@zamir-loshi.ch">info@zamir-loshi.ch</a>

@@ -51,7 +51,7 @@
         </div>
     </section>
     
-    <section id="offers">
+    <section class="offers">
       <div class="flexcontainer">
             <div class="offerpictures">
                 <div class="image picture1">
@@ -79,7 +79,7 @@
       </div>
     </section>
     
-    <section class="background" id="contact">
+    <section class="contact" id="contact">
         <h2 class="contactadjustement">Sag mir was <strong class="mark navy">du brauchst</strong> und <br>
             ich sende dir <strong class="mark navy">eine Offerte</strong></h2>
         <a href="mailto:info@zamir-loshi.ch">info@zamir-loshi.ch</a>

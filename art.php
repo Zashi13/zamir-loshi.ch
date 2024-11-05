@@ -23,103 +23,71 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 	
-<body onclick>		
-	<div id="top" class="background">
-   	  <img class="BGimg desk" src="Assets/BG-Top-Art.jpg"/>
-	  <img class="BGimg mobile" src="Assets/BG-Top-Art-mobile.jpg"/>
+<body>		
+	<section id="topart">
 <header>
-			  <img src="Assets/Logo-TextEN.png"/>
-	 <a href="index.php"><div class="artbutton">
-		<p>Sportsphotography</p>
-	</div></a>
-    <div class="language"><a href="artDE.php"><p class="unselected">DE</p></a><a href="art.php"><p class="selected">EN</p></a></div>
-	  </header>
+		<img src="Assets/Logo-TextEN.png"/>
+
+		<nav id="language"><a active href="artDE.php">DE</a><a class="selected" href="index.php">EN</a></nav>
+		</header>
 		  
 	  	 
 		  
-	  <h1 class="center">More than <span class="mark">memories.</span><br>
-			  It's <span class="mark">art!</span> </h1>
-	  <a href="#menupoints"><img class="arrow" src="Assets/Arrows.svg" alt=""/></a>
-<div class="menu white" id="menupoints">
+		<h1 id="main-title">More than <strong class="mark">memories.</strong><br>
+			  It's <strong class="mark">art!</strong> </h1>
+			  <a href="#navigation"><img id="arrow" src="Assets/Arrows.svg" alt=""/></a>
+			  <nav id="navigation">
 		<div class="social">
 		  <a href="https://www.instagram.com/zamirloshifoto/" target="_blank"><img src="Assets/instagram.svg" alt=""/></a> 
 		<a href="https://www.linkedin.com/in/zamir-loshi-263b2b189" target="_blank"><img src="Assets/linkedin-in.svg" alt=""/></a>
 		  </div>
 			
-			<div class="menupoints menupointsart">
-				<a href="#about"><p>About me</p></a> <a href="#offers"><p>Offers</p></a> <a href="#contact"><p>Contact</p></a> <a href="#galerie"><p>Gallery </p></a>
+			<div class="menupoints">
+				<a href="#about">About me</a> <a href="#offers">Offers</a> <a href="#contact">Contact</a> <a href="#galerie">Gallery</a> <a href="art.php">Sportsphotography</a>
 			</div>
 		
-		</div>
-	</div>
+</nav>
+</section>
 
-	<div class="background" id="about">
-   	  <img class="BGimg blur" src="Assets/BG-About-Art.jpg"/>
-		<div class="aboutwrapper">
+<section id="about">
     <img class="imgabout" src="Assets/Portrait About.jpg"/> 
 	<div class="abouttext">
 		<h3>About me</h3>
 		<p>I believe that a photograph can be so much more than just the light that hits the sensor. It encapsulates the emotions and feelings of the captured moment. Since my childhood, I have been fascinated by photography and its endless possibilities. I professionalised my craft in 2020 and have worked as a professional sports- and news photographer ever since. My style is different from what you’re used to. High contrast, colourful and a complex artistic approach make for unique pictures that look just as good on a card as they do printed on canvas.</p>
 		</div>
-		</div>
-	</div>
+</section>
 	
 	
-	<div class="background" id="offers">
-   	  <img class="BGimg blur" src="Assets/BG-Offers-Art.jpg"/>
-	  <div class="offerscontainer">
+<section class="offersart" id="offers">
+	  <div class="flexcontainer">
 			<div class="offerpictures">
-				<div class="imageart picture1art">
+				<div class="card art-card picture1art">
 					<h5>Couples Portraits</h5><br>
 					<p>Celebrate your love with a photoshoot. Available in different packages for every budget. It's also perfect as a gift for you and your special someone.</p>
 					</div>
 				
-				<div class="imageart picture2art">
+				<div class="card art-card picture2art">
 					<h5>Engagement Session</h5><br>
 					<p>First of all, congratulations! Make the memory last forever and create your own personal art in the process.</p>
 					</div>
 		  </div>
 			<h5>Looking to create art?<span class="mark">I got you covered!</span></h5>
-			<div class="offerpictures flexcenter">
-				<div class="imageart picture3art">
+			<div class="offerpictures">
+				<div class="card art-card picture3art">
 					<h5>Portraits</h5><br>
 					<p>First impressions last. In just a few hours I create professional and creative or serious portraits that leave a better impression than a selfie.</p>
 					</div>
 			</div>
 		  <h5>Questions? Contact me!</h5>
 		</div>
-	</div>
+</section>
 	
 	
-	<!-- <div class="background" id="contact">
-   	  <div class="bgorange" src="Assets/BG-Contact.jpg">
-		<h2 class="contactadjustement">Tell me what <span class="orange">you need</span> and <br>
-			I will send you <span class="orange">an offer</span>.*</h2>
-		
-					<form method="post" action="sendmail.php">
-					<div class="form">	
-				<select id="contactreason" name="reason" required>
-					<option value="">Reson for contact</option>
-						<option value="EventPhoto">Couples portraits</option>
-					<option value="Kart">Engagement Session</option>
-						<option value="Portraits">Portraits</option>
-						<option value="Talk">Just want to talk</option>
-						
-						</select>
-						<div class="inline">					
-						<input type="email" required name="email" placeholder="Email">
-						<input type="text" required name="name" placeholder="Full Name"></div>
-				<br>
-
-						<textarea name="text" placeholder="Write your message"></textarea><br>
-						<button name="submit" class="g-recaptcha" 
-        data-sitekey="reCAPTCHA_site_key" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-						</div>
-			</form>
-	</div>
-	</div> -->
+<section class="contact contactart" id="contact">
+		<h2 class="contactadjustement">Tell me what <strong class="mark navy">you need</strong> and <br>
+			I will send you <strong class="mark navy">an offer</strong></h2>
+		<a href="mailto:info@zamir-loshi.ch">info@zamir-loshi.ch</a>
+</section>
 	
 	<div class="background BGimg" id="galerie">	
 
