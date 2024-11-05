@@ -28,7 +28,7 @@
 <header>
 		<img src="Assets/Logo-TextEN.png"/>
 
-		<nav id="language"><a active href="artDE.php">DE</a><a class="selected" href="index.php">EN</a></nav>
+		<nav id="language"><a active href="artDE.php">DE</a><a class="selected" href="art.php">EN</a></nav>
 		</header>
 		  
 	  	 
@@ -43,7 +43,7 @@
 		  </div>
 			
 			<div class="menupoints">
-				<a href="#about">About me</a> <a href="#offers">Offers</a> <a href="#contact">Contact</a> <a href="#galerie">Gallery</a> <a href="art.php">Sportsphotography</a>
+				<a href="#about">About me</a> <a href="#offers">Offers</a> <a href="#contact">Contact</a> <a href="#galerie">Gallery</a> <a href="index.php">Sportsphotography</a>
 			</div>
 		
 </nav>

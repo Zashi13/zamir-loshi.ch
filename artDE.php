@@ -28,7 +28,7 @@
 			<img src="Assets/Logo-Text.png" alt="Zamir Loshi Logo"/>
 			<nav id="language">
 				<a href="artDE.php" class="selected">DE</a>
-				<a href="index.php">EN</a>
+				<a href="art.php">EN</a>
 			</nav>
 		</header>
 
@@ -45,7 +45,7 @@
 				<a href="#offers">Angebote</a>
 				<a href="#contact">Kontakt</a>
 				<a href="#galerie">Galerie</a>
-				<a href="art.php">Sportfotografie</a>
+				<a href="indexDE.php">Sportfotografie</a>
 			</div>
 		</nav>
 	</section>
