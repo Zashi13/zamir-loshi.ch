@@ -15,6 +15,7 @@
 
 html{
 	scroll-behavior:smooth;
+	
 }
 
 body{
@@ -36,13 +37,6 @@ section{
 
 .mobile{
 	display: none;
-}
-
-.center{
-	position: absolute;
-  	top: 35%;
-  	left: 150px;
-  
 }
 
 h1{
@@ -76,19 +70,13 @@ font-style: normal;
 	color: var(--orange);
 }
 
-.blur{
-	filter: blur(7px);
-	transform: scale(1.05);
-	height: 100vh;
-}
-
 a{
 	text-decoration: none;
 	color: var(--orange);
 }
 
 a:hover{
-	color: var(--navy);
+	color: var(--white);
 }
 /*---------------------------------Top--------------------------*/
 
@@ -101,12 +89,21 @@ a:hover{
 	background-image: url(Assets/BG-Top-Mobile.jpg);	
 }}
 
+#main-title{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+  transform: translate(-50%);
+  width: 80vw;
+}
+
 #arrow{
 	width: 5vw;
+	max-width: 100px;
 	position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translateX(-50%);
+  	top: 75%;
+  	left: 50%;
+  	transform: translateX(-50%);
 	animation: bounce 1.7s ease-in-out infinite;
 	
 }
@@ -190,16 +187,18 @@ header img{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	padding-inline: 10vw;
 }
 
 #about img{
-	width: 45vw;
+	width: auto;
 	height: 45vh;
 	object-fit: cover;
 }
 
 .abouttext{
-	width: 45vw;
+	width: 40vw;
+	max-width: 400px;
 }
 
 #about::after{
@@ -225,7 +224,20 @@ header img{
 	align-items: center;
 }
 
-.offerscontainer{
+h5{
+	text-align: center;
+font-family: edita, serif;
+font-weight: 500;
+font-style: normal;
+	font-size: 3vw;
+	color: var(--white);
+}
+
+#offers h5{
+	margin: 30px 0px;
+}
+
+.flexcontainer{
 	display: flex;
 	flex-direction: column;
 	width: 90vw;
@@ -257,16 +269,6 @@ header img{
 	font-size: 1.2vw;
 }
 
-h5{
-	text-align: center;
-font-family: edita, serif;
-font-weight: 500;
-font-style: normal;
-	font-size: 3vw;
-	color: var(--white);
-	margin: 0px;
-}
-
 
 .image h5{
 	color: var(--navy);
@@ -275,6 +277,7 @@ font-style: normal;
 	font-style: italic;
 	opacity: 0;
 	transform: scale(0);
+	margin: 0px;
 }
 
 .imageart h5{
@@ -378,31 +381,13 @@ h2{
 -moz-box-shadow: 1px 5px 6px 0px rgba(0,0,0,0.6);
 }
 
-.vertical{
-	grid-row: span 2;
-}
-
 li{
 	padding: 7px 0px;
 }
 
-h6{
-color: var(--orange);
-text-align: center;
-font-family: edita, serif;
-font-weight: 500;
-font-style: normal;
-	font-size: 40px;
-	margin: 3vh 0 1vh;
-}
 
 .bilderport::-webkit-scrollbar {
   display: none;
-}
-
-.bilderport	 {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 /*-----------------------------------Footer-------------------------------------*/

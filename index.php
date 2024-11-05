@@ -16,7 +16,7 @@
 <meta charset="utf-8">
 	
 <meta name="description" content="Sports- and Eventphotgrapher">
-<meta name="keywords" content="Fotografie Sportfotografie Sportmarketing Schweiz Fotograf">
+<meta name="keywords" content="Fotografie Sportfotografie Sportmarketing Social Media Schweiz Fotograf">
 <link rel="stylesheet" href="https://use.typekit.net/vyc3wtt.css">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
@@ -31,7 +31,7 @@
 		  
 	  	 
 		  
-	  <h1 class="center">Make the moment of a <strong class="mark">lifetime,</strong><br>
+	  <h1 id="main-title">Make the moment of a <strong class="mark">lifetime,</strong><br>
 			  last <strong class="mark">forever!</strong> </h1>
 	  <a href="#navigation"><img id="arrow" src="Assets/Arrows.svg" alt=""/></a>
 
@@ -58,8 +58,8 @@ Why photography? I photographed my first Formula 1 race at the 2019 Italian Gran
 </section>
 	
 	
-	<section class="background" id="offers">
-	  <div class="offerscontainer">
+	<section id="offers">
+	  <div class="flexcontainer">
 			<div class="offerpictures">
 				<div class="image picture1">
 					<h5>Eventphotography</h5><br>
