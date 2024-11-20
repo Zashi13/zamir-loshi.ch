@@ -78,6 +78,16 @@ a{
 a:hover{
 	color: var(--white);
 }
+
+::-moz-selection { /* Code for Firefox */
+	background: rgba(243, 145, 35, .8);
+	color: var(--white);
+  }
+  
+  ::selection {
+	background: rgba(243, 145, 35, .8);
+	color: var(--white);
+  }
 /*---------------------------------Top--------------------------*/
 
 #top{
